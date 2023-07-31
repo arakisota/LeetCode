@@ -1,6 +1,22 @@
-from string import ascii_lowercase
+"""
+時間計算量 : O(n), 87.29%
+空間計算量 : O(n), 74.28%
+"""
+
+#from string import ascii_lowercase
 
 class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        palindrome = str()
+        for feature in s.lower().replace(" ", ""):
+            if feature.isalnum():
+                palindrome += feature
+        if palindrome == palindrome[::-1]:
+            return True
+        else:
+            return False
+
+"""class Solution:
     def isPalindrome(self, s: str) -> bool:
         num = set([str(i) for i in range(10)])
         num = num | set(ascii_lowercase)
@@ -11,4 +27,4 @@ class Solution:
         if new_s == new_s[::-1]:
             return True
         else:
-            return False
+            return False"""
