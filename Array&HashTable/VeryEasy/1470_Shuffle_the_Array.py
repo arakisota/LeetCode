@@ -1,5 +1,6 @@
 """
-Beats :70.28%
+時間計算量 : O(n), 99.87%
+空間計算量 : O(n), 38.50%
 """
 
 from typing import List
