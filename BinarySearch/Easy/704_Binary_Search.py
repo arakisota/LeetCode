@@ -1,3 +1,8 @@
+"""
+時間計算量 : O(logn), 21.53%
+空間計算量 : O(n), 34.86%
+"""
+
 import bisect
 from typing import List
 

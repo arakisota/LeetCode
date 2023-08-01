@@ -1,3 +1,8 @@
+"""
+時間計算量 : O(logn), 99.53%
+空間計算量 : O(1), 34.38%
+"""
+
 # The isBadVersion API is already defined for you.
 # def isBadVersion(version: int) -> bool:
 
@@ -5,14 +10,10 @@ class Solution:
     def firstBadVersion(self, n: int) -> int:
         left = 1
         right = n
-        result = 1
-        while left <= right:
-            mid = (left + right) // 2
-            #Falseは通常だと低いとみなすとわかりやすいかも
-            if isBadVersion(mid) == False:
-                left = mid + 1
+        while left < right:
+            mid = (left+right) // 2
+            if isBadVersion(mid):
+                right = mid
             else:
-                right = mid - 1
-                result = mid
-
-        return result
+                left = mid + 1
+        return left
