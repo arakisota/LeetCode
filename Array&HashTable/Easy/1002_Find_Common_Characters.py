@@ -1,3 +1,8 @@
+"""
+時間計算量 : O(n), 93.78%
+空間計算量 : O(n), 11.55%
+"""
+
 from typing import List
 from collections import Counter
 

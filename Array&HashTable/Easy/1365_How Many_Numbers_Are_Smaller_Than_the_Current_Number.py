@@ -1,3 +1,8 @@
+"""
+時間計算量 : O(nlogn), 80.3%
+空間計算量 : O(n), 68.46%
+"""
+
 from typing import List
 
 class Solution:

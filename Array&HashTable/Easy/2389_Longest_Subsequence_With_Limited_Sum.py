@@ -1,3 +1,9 @@
+"""
+時間計算量 : O(nlogn+mn), 70.20%
+空間計算量 : O(n), 66.15%
+PythonのsortはTimSortだから、sortするときにO(n)の追加の配列が必要になる。C++やJAVAだとQuickSortやHeapSortになるからO(logn)になる。
+"""
+
 import bisect
 from itertools import accumulate
 from typing import List
